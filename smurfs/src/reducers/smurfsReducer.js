@@ -1,15 +1,19 @@
 const initialState = {
-    name: "",
-    age: "",
-    height: "",
-    id: "",
+    name:"",
+    age:"",
+    height:"",
+    id:"",
     loading: false
 }
 
 export const smurfsReducer = (state = initialState, action) =>{
+   
     switch (action.type) {
+        case "LOADING":
+         return {...state, loading:true}  
      case "NEW_SMURF":
-         return {...state, loading:true, name:action.payload.name,age:action.payload.age,height:action.payload.height,id:action.payload.id }
+         return [...state,{loading:!state.loading}]
+       
          default:
              return state;
          
