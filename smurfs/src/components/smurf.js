@@ -12,9 +12,10 @@ console.log(props.name)
       <h1>{`Name: ${props.name} / Age: ${props.age} / height: ${props.height}`}</h1>
         
       }
-     <button onClick={ ()=> {
+     <button onClick={ (e)=> {
+         e.preventDefault()
          props.getSmurfs()
-     }}> Click to get your smurfs</button>
+     }}> Show First API Smurf</button>
 
       
     </div>)
