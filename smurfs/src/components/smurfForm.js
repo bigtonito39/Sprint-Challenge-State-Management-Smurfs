@@ -24,7 +24,7 @@ const handleSubmit = (e) => {
 }
 
     return (
-        <div>
+        <div className="form-div">
 <form >
 <label>Name:
 <input

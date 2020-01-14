@@ -12,14 +12,14 @@ console.log(props.smurfs)
         <h1>Loading...</h1>
       ) : 
       props.smurfs.map(data => {
-        return <h1>{`Name: ${data.name} / Age: ${data.age} / height: ${data.height}`}</h1>
+        return <h3>{`Name: ${data.name} / Age: ${data.age} / height: ${data.height}`}</h3>
       })
         
       }
      <button onClick={ (e)=> {
          e.preventDefault()
          props.getSmurfs()
-     }}> Show First API Smurf</button>
+     }}> Show List of Smurfs on API</button>
 <div>
    
 </div>
